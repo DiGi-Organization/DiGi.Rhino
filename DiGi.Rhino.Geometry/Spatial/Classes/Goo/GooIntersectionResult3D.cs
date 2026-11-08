@@ -251,7 +251,7 @@ namespace DiGi.Rhino.Geometry.Spatial.Classes
     //    }
     //}
 
-    //public class GooIntersectionResult3DParam: GooPresistentParam<GooIntersectionResult3D, IntersectionResult3D>, IGooBakeAwareParam
+    //public class GooIntersectionResult3DParam: GooPersistentParam<GooIntersectionResult3D, IntersectionResult3D>, IGooBakeAwareParam
     //{
     //    public GooIntersectionResult3DParam()
     //       : base()

@@ -40,7 +40,7 @@ namespace DiGi.GIS.Rhino.Classes
     /// <summary>
     /// Represents a Grasshopper parameter that handles <see cref="GooAddress"/> objects.
     /// </summary>
-    public class GooAddressParam : GooSerializablePresistentParam<GooAddress, Core.Classes.Address>
+    public class GooAddressParam : GooSerializablePersistentParam<GooAddress, Core.Classes.Address>
     {
         /// <summary>
         /// Gets the unique identifier for the <see cref="GooAddressParam"/> component.

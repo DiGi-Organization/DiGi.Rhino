@@ -263,7 +263,7 @@ namespace DiGi.Rhino.Geometry.Core.Classes
     /// supporting baking and viewport preview.
     /// </summary>
     /// <typeparam name="T">The DiGi geometry type. Must implement <see cref="IGeometry"/>.</typeparam>
-    public class GooGeometryParam<T> : GooSerializablePresistentParam<GooGeometry<T>, T>, IGooGeometryParam where T : IGeometry
+    public class GooGeometryParam<T> : GooSerializablePersistentParam<GooGeometry<T>, T>, IGooGeometryParam where T : IGeometry
     {
         /// <summary>
         /// Initializes a new default instance of <see cref="GooGeometryParam{T}"/>.

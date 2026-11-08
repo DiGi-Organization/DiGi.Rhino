@@ -40,7 +40,7 @@ namespace DiGi.GIS.Rhino.Classes
     /// <summary>
     /// Represents a persistent Grasshopper parameter for handling <see cref="GooTimeSeries"/> objects.
     /// </summary>
-    public class GooTimeSeriesParam : GooSerializablePresistentParam<GooTimeSeries, Core.Interfaces.ITimeSeries>
+    public class GooTimeSeriesParam : GooSerializablePersistentParam<GooTimeSeries, Core.Interfaces.ITimeSeries>
     {
         /// <summary>
         /// Gets the unique identifier (GUID) for the <see cref="GooTimeSeriesParam"/> component.

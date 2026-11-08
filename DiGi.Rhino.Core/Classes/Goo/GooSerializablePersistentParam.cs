@@ -12,22 +12,22 @@ namespace DiGi.Rhino.Core.Classes
     /// </summary>
     /// <typeparam name="T">The type of the Goo object, which must derive from <see cref="GooSerializableObject{X}"/>.</typeparam>
     /// <typeparam name="X">The underlying serializable data type that implements <see cref="ISerializableObject"/>.</typeparam>
-    public class GooSerializablePresistentParam<T, X> : GooPresistentParam<T, X> where T : GooSerializableObject<X> where X : ISerializableObject
+    public class GooSerializablePersistentParam<T, X> : GooPersistentParam<T, X> where T : GooSerializableObject<X> where X : ISerializableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="GooSerializablePresistentParam{T, X}"/> class with a specified name and subcategory.
+        /// Initializes a new instance of the <see cref="GooSerializablePersistentParam{T, X}"/> class with a specified name and subcategory.
         /// </summary>
         /// <param name="name">The display name of the parameter.</param>
         /// <param name="subcategory">The subcategory used for grouping in the Grasshopper interface.</param>
-        public GooSerializablePresistentParam(string name, string subcategory)
+        public GooSerializablePersistentParam(string name, string subcategory)
             : base(name, subcategory)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GooSerializablePresistentParam{T, X}"/> class.
+        /// Initializes a new instance of the <see cref="GooSerializablePersistentParam{T, X}"/> class.
         /// </summary>
-        public GooSerializablePresistentParam()
+        public GooSerializablePersistentParam()
             : base()
         {
         }

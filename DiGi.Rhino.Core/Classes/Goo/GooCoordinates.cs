@@ -40,7 +40,7 @@ namespace DiGi.GIS.Rhino.Classes
     /// <summary>
     /// Represents a Grasshopper parameter for geographic coordinates.
     /// </summary>
-    public class GooCoordinatesParam : GooSerializablePresistentParam<GooCoordinates, Core.Classes.Coordinates>
+    public class GooCoordinatesParam : GooSerializablePersistentParam<GooCoordinates, Core.Classes.Coordinates>
     {
         /// <summary>
         /// Gets the unique identifier for the coordinate component.

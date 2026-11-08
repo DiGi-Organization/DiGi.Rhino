@@ -40,7 +40,7 @@ namespace DiGi.GIS.Rhino.Classes
     /// <summary>
     /// Represents the Grasshopper parameter type for <see cref="GooParameterDefinition"/>.
     /// </summary>
-    public class GooParameterDefinitionParam : GooSerializablePresistentParam<GooParameterDefinition, Core.Parameter.Interfaces.IParameterDefinition>
+    public class GooParameterDefinitionParam : GooSerializablePersistentParam<GooParameterDefinition, Core.Parameter.Interfaces.IParameterDefinition>
     {
         /// <summary>
         /// Gets the unique identifier for the component associated with this parameter.

@@ -106,7 +106,7 @@ namespace DiGi.Rhino.Geometry.Core.Classes
     /// </summary>
     /// <typeparam name="X">The type of the Goo object, which must inherit from <see cref="GooBakeAwareSerializableObject{T}"/>.</typeparam>
     /// <typeparam name="T">The type of the underlying serializable object, which must implement <see cref="ISerializableObject"/>.</typeparam>
-    public class GooBakeAwareSerializableParam<X, T> : GooSerializablePresistentParam<X, T>, IGooBakeAwareParam where T : ISerializableObject where X : GooBakeAwareSerializableObject<T>
+    public class GooBakeAwareSerializableParam<X, T> : GooSerializablePersistentParam<X, T>, IGooBakeAwareParam where T : ISerializableObject where X : GooBakeAwareSerializableObject<T>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="GooBakeAwareSerializableParam{X, T}"/> class.

@@ -11,22 +11,22 @@ namespace DiGi.Rhino.Core.Classes
     /// </summary>
     /// <typeparam name="T">The type of the Goo object, which must inherit from <see cref="GooObject{TObject}"/>.</typeparam>
     /// <typeparam name="X">The type of the underlying data object, which must implement <see cref="IObject"/>.</typeparam>
-    public class GooPresistentParam<T, X> : GH_PersistentParam<T?> where T : GooObject<X?> where X : IObject
+    public class GooPersistentParam<T, X> : GH_PersistentParam<T?> where T : GooObject<X?> where X : IObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="GooPresistentParam{T, X}"/> class with a specified name and subcategory.
+        /// Initializes a new instance of the <see cref="GooPersistentParam{T, X}"/> class with a specified name and subcategory.
         /// </summary>
         /// <param name="name">The display name of the parameter.</param>
         /// <param name="subcategory">The subcategory under which the parameter is listed in the Grasshopper menu.</param>
-        public GooPresistentParam(string name, string subcategory)
+        public GooPersistentParam(string name, string subcategory)
             : base(name, name, typeof(X).FullName?.Replace(".", " "), "Params", subcategory)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GooPresistentParam{T, X}"/> class using default values derived from type <typeparamref name="X"/>.
+        /// Initializes a new instance of the <see cref="GooPersistentParam{T, X}"/> class using default values derived from type <typeparamref name="X"/>.
         /// </summary>
-        public GooPresistentParam()
+        public GooPersistentParam()
             : base(Query.Name(typeof(X)), Query.Name(typeof(X)), typeof(X).FullName?.Replace(".", " "), "Params", Query.Subcategory(typeof(X)))
         {
         }

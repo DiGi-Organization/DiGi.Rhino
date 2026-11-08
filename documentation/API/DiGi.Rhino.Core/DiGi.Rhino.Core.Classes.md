@@ -2137,75 +2137,75 @@ The writer used to serialize the object\.
 [System\.Boolean](https://learn.microsoft.com/en-us/dotnet/api/system.boolean 'System\.Boolean')  
 `true` if the write operation was successful; otherwise, `false`\.
 
-<a name='DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_'></a>
+<a name='DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_'></a>
 
-## GooPresistentParam\<T,X\> Class
+## GooPersistentParam\<T,X\> Class
 
-Represents a persistent parameter in Grasshopper that manages data of type [T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooPresistentParam\<T,X\>\.T'),
-which wraps an underlying object of type [X](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.X 'DiGi\.Rhino\.Core\.Classes\.GooPresistentParam\<T,X\>\.X')\.
+Represents a persistent parameter in Grasshopper that manages data of type [T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooPersistentParam\<T,X\>\.T'),
+which wraps an underlying object of type [X](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.X 'DiGi\.Rhino\.Core\.Classes\.GooPersistentParam\<T,X\>\.X')\.
 
 ```csharp
-public class GooPresistentParam<T,X>
+public class GooPersistentParam<T,X>
     where T : DiGi.Rhino.Core.Classes.GooObject<X?>
     where X : DiGi.Core.Interfaces.IObject
 ```
 #### Type parameters
 
-<a name='DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.T'></a>
+<a name='DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.T'></a>
 
 `T`
 
 The type of the Goo object, which must inherit from [GooObject&lt;TObject&gt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooObject_TObject_ 'DiGi\.Rhino\.Core\.Classes\.GooObject\<TObject\>')\.
 
-<a name='DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.X'></a>
+<a name='DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.X'></a>
 
 `X`
 
 The type of the underlying data object, which must implement [DiGi\.Core\.Interfaces\.IObject](https://learn.microsoft.com/en-us/dotnet/api/digi.core.interfaces.iobject 'DiGi\.Core\.Interfaces\.IObject')\.
 
-Inheritance [Grasshopper\.Kernel\.GH\_PersistentParam](https://learn.microsoft.com/en-us/dotnet/api/grasshopper.kernel.gh_persistentparam 'Grasshopper\.Kernel\.GH\_PersistentParam') → GooPresistentParam\<T,X\>
+Inheritance [Grasshopper\.Kernel\.GH\_PersistentParam](https://learn.microsoft.com/en-us/dotnet/api/grasshopper.kernel.gh_persistentparam 'Grasshopper\.Kernel\.GH\_PersistentParam') → GooPersistentParam\<T,X\>
 
 Derived  
-↳ [GooSerializablePresistentParam&lt;T,X&gt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePresistentParam\<T,X\>')
+↳ [GooSerializablePersistentParam&lt;T,X&gt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePersistentParam\<T,X\>')
 ### Constructors
 
-<a name='DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.GooPresistentParam()'></a>
+<a name='DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.GooPersistentParam()'></a>
 
-## GooPresistentParam\(\) Constructor
+## GooPersistentParam\(\) Constructor
 
-Initializes a new instance of the [GooPresistentParam&lt;T,X&gt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooPresistentParam\<T,X\>') class using default values derived from type [X](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.X 'DiGi\.Rhino\.Core\.Classes\.GooPresistentParam\<T,X\>\.X')\.
+Initializes a new instance of the [GooPersistentParam&lt;T,X&gt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooPersistentParam\<T,X\>') class using default values derived from type [X](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.X 'DiGi\.Rhino\.Core\.Classes\.GooPersistentParam\<T,X\>\.X')\.
 
 ```csharp
-public GooPresistentParam();
+public GooPersistentParam();
 ```
 
-<a name='DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.GooPresistentParam(string,string)'></a>
+<a name='DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.GooPersistentParam(string,string)'></a>
 
-## GooPresistentParam\(string, string\) Constructor
+## GooPersistentParam\(string, string\) Constructor
 
-Initializes a new instance of the [GooPresistentParam&lt;T,X&gt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooPresistentParam\<T,X\>') class with a specified name and subcategory\.
+Initializes a new instance of the [GooPersistentParam&lt;T,X&gt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooPersistentParam\<T,X\>') class with a specified name and subcategory\.
 
 ```csharp
-public GooPresistentParam(string name, string subcategory);
+public GooPersistentParam(string name, string subcategory);
 ```
 #### Parameters
 
-<a name='DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.GooPresistentParam(string,string).name'></a>
+<a name='DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.GooPersistentParam(string,string).name'></a>
 
 `name` [System\.String](https://learn.microsoft.com/en-us/dotnet/api/system.string 'System\.String')
 
 The display name of the parameter\.
 
-<a name='DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.GooPresistentParam(string,string).subcategory'></a>
+<a name='DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.GooPersistentParam(string,string).subcategory'></a>
 
 `subcategory` [System\.String](https://learn.microsoft.com/en-us/dotnet/api/system.string 'System\.String')
 
 The subcategory under which the parameter is listed in the Grasshopper menu\.
 ### Properties
 
-<a name='DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.ComponentGuid'></a>
+<a name='DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.ComponentGuid'></a>
 
-## GooPresistentParam\<T,X\>\.ComponentGuid Property
+## GooPersistentParam\<T,X\>\.ComponentGuid Property
 
 Gets the unique identifier for this component\.
 
@@ -2217,20 +2217,20 @@ public override System.Guid ComponentGuid { get; }
 [System\.Guid](https://learn.microsoft.com/en-us/dotnet/api/system.guid 'System\.Guid')
 ### Methods
 
-<a name='DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.Prompt_Plural(System.Collections.Generic.List_T_)'></a>
+<a name='DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.Prompt_Plural(System.Collections.Generic.List_T_)'></a>
 
-## GooPresistentParam\<T,X\>\.Prompt\_Plural\(List\<T\>\) Method
+## GooPersistentParam\<T,X\>\.Prompt\_Plural\(List\<T\>\) Method
 
-Prompts the user to supply multiple values of type [T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooPresistentParam\<T,X\>\.T')\.
+Prompts the user to supply multiple values of type [T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooPersistentParam\<T,X\>\.T')\.
 
 ```csharp
 protected override GH_GetterResult Prompt_Plural(ref System.Collections.Generic.List<T?> values);
 ```
 #### Parameters
 
-<a name='DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.Prompt_Plural(System.Collections.Generic.List_T_).values'></a>
+<a name='DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.Prompt_Plural(System.Collections.Generic.List_T_).values'></a>
 
-`values` [System\.Collections\.Generic\.List&lt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1 'System\.Collections\.Generic\.List\`1')[T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooPresistentParam\<T,X\>\.T')[&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1 'System\.Collections\.Generic\.List\`1')
+`values` [System\.Collections\.Generic\.List&lt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1 'System\.Collections\.Generic\.List\`1')[T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooPersistentParam\<T,X\>\.T')[&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1 'System\.Collections\.Generic\.List\`1')
 
 The list of values supplied by the user\.
 
@@ -2238,20 +2238,20 @@ The list of values supplied by the user\.
 [Grasshopper\.Kernel\.GH\_GetterResult](https://learn.microsoft.com/en-us/dotnet/api/grasshopper.kernel.gh_getterresult 'Grasshopper\.Kernel\.GH\_GetterResult')  
 A [Grasshopper\.Kernel\.GH\_GetterResult](https://learn.microsoft.com/en-us/dotnet/api/grasshopper.kernel.gh_getterresult 'Grasshopper\.Kernel\.GH\_GetterResult') indicating the outcome of the prompt\.
 
-<a name='DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.Prompt_Singular(T)'></a>
+<a name='DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.Prompt_Singular(T)'></a>
 
-## GooPresistentParam\<T,X\>\.Prompt\_Singular\(T\) Method
+## GooPersistentParam\<T,X\>\.Prompt\_Singular\(T\) Method
 
-Prompts the user to supply a single value of type [T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooPresistentParam\<T,X\>\.T')\.
+Prompts the user to supply a single value of type [T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooPersistentParam\<T,X\>\.T')\.
 
 ```csharp
 protected override GH_GetterResult Prompt_Singular(ref T? value);
 ```
 #### Parameters
 
-<a name='DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.Prompt_Singular(T).value'></a>
+<a name='DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.Prompt_Singular(T).value'></a>
 
-`value` [T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooPresistentParam\<T,X\>\.T')
+`value` [T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooPersistentParam\<T,X\>\.T')
 
 The value supplied by the user\.
 
@@ -2509,32 +2509,32 @@ The selected value\.
 [Grasshopper\.Kernel\.GH\_GetterResult](https://learn.microsoft.com/en-us/dotnet/api/grasshopper.kernel.gh_getterresult 'Grasshopper\.Kernel\.GH\_GetterResult')  
 A result indicating whether the operation was successful\.
 
-<a name='DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_'></a>
+<a name='DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_'></a>
 
-## GooSerializablePresistentParam\<T,X\> Class
+## GooSerializablePersistentParam\<T,X\> Class
 
-Represents a persistent parameter that handles serializable objects of type [T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePresistentParam\<T,X\>\.T') and [X](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.X 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePresistentParam\<T,X\>\.X')\.
+Represents a persistent parameter that handles serializable objects of type [T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePersistentParam\<T,X\>\.T') and [X](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.X 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePersistentParam\<T,X\>\.X')\.
 
 ```csharp
-public class GooSerializablePresistentParam<T,X> : DiGi.Rhino.Core.Classes.GooPresistentParam<T, X>
+public class GooSerializablePersistentParam<T,X> : DiGi.Rhino.Core.Classes.GooPersistentParam<T, X>
     where T : DiGi.Rhino.Core.Classes.GooSerializableObject<X>
     where X : DiGi.Core.Interfaces.ISerializableObject
 ```
 #### Type parameters
 
-<a name='DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.T'></a>
+<a name='DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.T'></a>
 
 `T`
 
 The type of the Goo object, which must derive from [GooSerializableObject&lt;TSerializableObject&gt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializableObject_TSerializableObject_ 'DiGi\.Rhino\.Core\.Classes\.GooSerializableObject\<TSerializableObject\>')\.
 
-<a name='DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.X'></a>
+<a name='DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.X'></a>
 
 `X`
 
 The underlying serializable data type that implements [DiGi\.Core\.Interfaces\.ISerializableObject](https://learn.microsoft.com/en-us/dotnet/api/digi.core.interfaces.iserializableobject 'DiGi\.Core\.Interfaces\.ISerializableObject')\.
 
-Inheritance [Grasshopper\.Kernel\.GH\_PersistentParam](https://learn.microsoft.com/en-us/dotnet/api/grasshopper.kernel.gh_persistentparam 'Grasshopper\.Kernel\.GH\_PersistentParam') → [DiGi\.Rhino\.Core\.Classes\.GooPresistentParam&lt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooPresistentParam\<T,X\>')[T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePresistentParam\<T,X\>\.T')[,](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooPresistentParam\<T,X\>')[X](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.X 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePresistentParam\<T,X\>\.X')[&gt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPresistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooPresistentParam\<T,X\>') → GooSerializablePresistentParam\<T,X\>
+Inheritance [Grasshopper\.Kernel\.GH\_PersistentParam](https://learn.microsoft.com/en-us/dotnet/api/grasshopper.kernel.gh_persistentparam 'Grasshopper\.Kernel\.GH\_PersistentParam') → [DiGi\.Rhino\.Core\.Classes\.GooPersistentParam&lt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooPersistentParam\<T,X\>')[T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePersistentParam\<T,X\>\.T')[,](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooPersistentParam\<T,X\>')[X](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.X 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePersistentParam\<T,X\>\.X')[&gt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooPersistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooPersistentParam\<T,X\>') → GooSerializablePersistentParam\<T,X\>
 
 Derived  
 ↳ [GooAddressParam](DiGi.GIS.Rhino.Classes.md#DiGi.GIS.Rhino.Classes.GooAddressParam 'DiGi\.GIS\.Rhino\.Classes\.GooAddressParam')  
@@ -2545,43 +2545,43 @@ Derived
 ↳ [GooTimeSeriesParam](DiGi.GIS.Rhino.Classes.md#DiGi.GIS.Rhino.Classes.GooTimeSeriesParam 'DiGi\.GIS\.Rhino\.Classes\.GooTimeSeriesParam')
 ### Constructors
 
-<a name='DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.GooSerializablePresistentParam()'></a>
+<a name='DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.GooSerializablePersistentParam()'></a>
 
-## GooSerializablePresistentParam\(\) Constructor
+## GooSerializablePersistentParam\(\) Constructor
 
-Initializes a new instance of the [GooSerializablePresistentParam&lt;T,X&gt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePresistentParam\<T,X\>') class\.
+Initializes a new instance of the [GooSerializablePersistentParam&lt;T,X&gt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePersistentParam\<T,X\>') class\.
 
 ```csharp
-public GooSerializablePresistentParam();
+public GooSerializablePersistentParam();
 ```
 
-<a name='DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.GooSerializablePresistentParam(string,string)'></a>
+<a name='DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.GooSerializablePersistentParam(string,string)'></a>
 
-## GooSerializablePresistentParam\(string, string\) Constructor
+## GooSerializablePersistentParam\(string, string\) Constructor
 
-Initializes a new instance of the [GooSerializablePresistentParam&lt;T,X&gt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePresistentParam\<T,X\>') class with a specified name and subcategory\.
+Initializes a new instance of the [GooSerializablePersistentParam&lt;T,X&gt;](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_ 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePersistentParam\<T,X\>') class with a specified name and subcategory\.
 
 ```csharp
-public GooSerializablePresistentParam(string name, string subcategory);
+public GooSerializablePersistentParam(string name, string subcategory);
 ```
 #### Parameters
 
-<a name='DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.GooSerializablePresistentParam(string,string).name'></a>
+<a name='DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.GooSerializablePersistentParam(string,string).name'></a>
 
 `name` [System\.String](https://learn.microsoft.com/en-us/dotnet/api/system.string 'System\.String')
 
 The display name of the parameter\.
 
-<a name='DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.GooSerializablePresistentParam(string,string).subcategory'></a>
+<a name='DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.GooSerializablePersistentParam(string,string).subcategory'></a>
 
 `subcategory` [System\.String](https://learn.microsoft.com/en-us/dotnet/api/system.string 'System\.String')
 
 The subcategory used for grouping in the Grasshopper interface\.
 ### Properties
 
-<a name='DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.ComponentGuid'></a>
+<a name='DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.ComponentGuid'></a>
 
-## GooSerializablePresistentParam\<T,X\>\.ComponentGuid Property
+## GooSerializablePersistentParam\<T,X\>\.ComponentGuid Property
 
 Gets the unique identifier for this component type\.
 
@@ -2593,9 +2593,9 @@ public override System.Guid ComponentGuid { get; }
 [System\.Guid](https://learn.microsoft.com/en-us/dotnet/api/system.guid 'System\.Guid')
 ### Methods
 
-<a name='DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.AppendAdditionalMenuItems(System.Windows.Forms.ToolStripDropDown)'></a>
+<a name='DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.AppendAdditionalMenuItems(System.Windows.Forms.ToolStripDropDown)'></a>
 
-## GooSerializablePresistentParam\<T,X\>\.AppendAdditionalMenuItems\(ToolStripDropDown\) Method
+## GooSerializablePersistentParam\<T,X\>\.AppendAdditionalMenuItems\(ToolStripDropDown\) Method
 
 Appends additional custom items to the context menu of the parameter\.
 
@@ -2604,15 +2604,15 @@ public override void AppendAdditionalMenuItems(System.Windows.Forms.ToolStripDro
 ```
 #### Parameters
 
-<a name='DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.AppendAdditionalMenuItems(System.Windows.Forms.ToolStripDropDown).menu'></a>
+<a name='DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.AppendAdditionalMenuItems(System.Windows.Forms.ToolStripDropDown).menu'></a>
 
 `menu` [System\.Windows\.Forms\.ToolStripDropDown](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdown 'System\.Windows\.Forms\.ToolStripDropDown')
 
 The [System\.Windows\.Forms\.ToolStripDropDown](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdown 'System\.Windows\.Forms\.ToolStripDropDown') menu to which items will be added\.
 
-<a name='DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.Prompt_Plural(System.Collections.Generic.List_T_)'></a>
+<a name='DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.Prompt_Plural(System.Collections.Generic.List_T_)'></a>
 
-## GooSerializablePresistentParam\<T,X\>\.Prompt\_Plural\(List\<T\>\) Method
+## GooSerializablePersistentParam\<T,X\>\.Prompt\_Plural\(List\<T\>\) Method
 
 Prompts the user to provide multiple values for the parameter\.
 
@@ -2621,9 +2621,9 @@ protected override GH_GetterResult Prompt_Plural(ref System.Collections.Generic.
 ```
 #### Parameters
 
-<a name='DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.Prompt_Plural(System.Collections.Generic.List_T_).values'></a>
+<a name='DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.Prompt_Plural(System.Collections.Generic.List_T_).values'></a>
 
-`values` [System\.Collections\.Generic\.List&lt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1 'System\.Collections\.Generic\.List\`1')[T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePresistentParam\<T,X\>\.T')[&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1 'System\.Collections\.Generic\.List\`1')
+`values` [System\.Collections\.Generic\.List&lt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1 'System\.Collections\.Generic\.List\`1')[T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePersistentParam\<T,X\>\.T')[&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1 'System\.Collections\.Generic\.List\`1')
 
 A reference to the list of values to be retrieved\.
 
@@ -2631,9 +2631,9 @@ A reference to the list of values to be retrieved\.
 [Grasshopper\.Kernel\.GH\_GetterResult](https://learn.microsoft.com/en-us/dotnet/api/grasshopper.kernel.gh_getterresult 'Grasshopper\.Kernel\.GH\_GetterResult')  
 The result of the getter operation as a [Grasshopper\.Kernel\.GH\_GetterResult](https://learn.microsoft.com/en-us/dotnet/api/grasshopper.kernel.gh_getterresult 'Grasshopper\.Kernel\.GH\_GetterResult')\.
 
-<a name='DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.Prompt_Singular(T)'></a>
+<a name='DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.Prompt_Singular(T)'></a>
 
-## GooSerializablePresistentParam\<T,X\>\.Prompt\_Singular\(T\) Method
+## GooSerializablePersistentParam\<T,X\>\.Prompt\_Singular\(T\) Method
 
 Prompts the user to provide a single value for the parameter\.
 
@@ -2642,9 +2642,9 @@ protected override GH_GetterResult Prompt_Singular(ref T? value);
 ```
 #### Parameters
 
-<a name='DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.Prompt_Singular(T).value'></a>
+<a name='DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.Prompt_Singular(T).value'></a>
 
-`value` [T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePresistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePresistentParam\<T,X\>\.T')
+`value` [T](DiGi.Rhino.Core.Classes.md#DiGi.Rhino.Core.Classes.GooSerializablePersistentParam_T,X_.T 'DiGi\.Rhino\.Core\.Classes\.GooSerializablePersistentParam\<T,X\>\.T')
 
 A reference to the value to be retrieved\.
 
