@@ -9,7 +9,7 @@ namespace DiGi.Rhino.Core.Classes
     /// </summary>
     public class InspectManager
     {
-        private Dictionary<Type, List<InspectMethod>>? dictionary = null;
+        private Dictionary<Type, List<InspectMethod>>? dictionary;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="InspectManager"/> class.

@@ -1,6 +1,7 @@
 using GH_IO.Serialization;
 using Grasshopper.Kernel;
 using System;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace DiGi.Rhino.Core.Classes
@@ -31,7 +32,7 @@ namespace DiGi.Rhino.Core.Classes
         /// </summary>
         /// <param name="prefix">The prefix used to construct the component's identity and category path.</param>
         public EnumComponent(string prefix)
-            : base(string.Format("{0}.{1}", prefix, typeof(T).Name), string.Format("{0}.{1}", prefix, typeof(T).Name), DiGi.Core.Query.Description(typeof(T)), "DiGi", string.Format("{0}.{1}", "DiGi", prefix))
+            : base(string.Format(CultureInfo.CurrentCulture, "{0}.{1}", prefix, typeof(T).Name), string.Format(CultureInfo.CurrentCulture, "{0}.{1}", prefix, typeof(T).Name), DiGi.Core.Query.Description(typeof(T)), "DiGi", string.Format(CultureInfo.CurrentCulture, "{0}.{1}", "DiGi", prefix))
         {
         }
 

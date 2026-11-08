@@ -71,8 +71,8 @@ namespace DiGi.Rhino.Core.Classes
                 return default;
             }
 
-            var name = $"Filter {ToChar(index)}";
-            var nickName = ToChar(index).ToString();
+            string name = $"Filter {ToChar(index)}";
+            string nickName = ToChar(index).ToString();
             return new Grasshopper.Kernel.Parameters.Param_String()
             {
                 Name = name,
@@ -119,8 +119,8 @@ namespace DiGi.Rhino.Core.Classes
             for (int i = 0; i < Params.Input.Count; ++i)
             {
                 var param = Params.Input[i];
-                var name = $"Filter {ToChar(i)}";
-                var nickName = ToChar(i).ToString();
+                string name = $"Filter {ToChar(i)}";
+                string nickName = ToChar(i).ToString();
 
                 if (Grasshopper.CentralSettings.CanvasFullNames)
                 {
@@ -163,7 +163,7 @@ namespace DiGi.Rhino.Core.Classes
 
         protected override void SolveInstance(IGH_DataAccess DA)
         {
-            var filters = new List<string>(Params.Input.Count);
+            List<string> filters = new(Params.Input.Count);
             for (int i = 0; i < Params.Input.Count; ++i)
             {
                 string filter = string.Empty;

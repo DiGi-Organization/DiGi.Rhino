@@ -152,7 +152,9 @@ namespace DiGi.Rhino.Core.Classes
             RecordUndoEvent("Get Common Parameters");
 
             List<GooParam> gooParams_Sorted = [.. gooParams];
-            gooParams_Sorted.Sort((x, y) => x.Name.CompareTo(y.Name));
+#pragma warning disable CA1309 // menu order shown to the user: the culture-aware order it always had
+            gooParams_Sorted.Sort((x, y) => string.Compare(x.Name, y.Name, StringComparison.CurrentCulture));
+#pragma warning restore CA1309
 
             PopulateOutputParameters(gooParams_Sorted);
         }
@@ -218,7 +220,9 @@ namespace DiGi.Rhino.Core.Classes
                 }
             }
 
-            gooParams.Sort((x, y) => x.Name.CompareTo(y.Name));
+#pragma warning disable CA1309 // menu order shown to the user: the culture-aware order it always had
+            gooParams.Sort((x, y) => string.Compare(x.Name, y.Name, StringComparison.CurrentCulture));
+#pragma warning restore CA1309
 
             PopulateOutputParameters(gooParams);
         }

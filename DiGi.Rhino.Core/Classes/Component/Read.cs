@@ -4,6 +4,7 @@ using DiGi.Rhino.Core.Enums;
 using Grasshopper.Kernel;
 using System;
 using System.Collections.Generic;
+using Path = DiGi.Core.Classes.Path;
 
 namespace DiGi.Rhino.Core.Classes
 {

@@ -126,7 +126,7 @@ namespace DiGi.Rhino.Core.Classes
             }
             else
             {
-                var currentName = componentParams[reference].Name;
+                string currentName = componentParams[reference].Name;
                 for (int i = 0; i < templateParams.Length; ++i)
                 {
                     if (templateParams[i].GH_Param.Name == currentName)
